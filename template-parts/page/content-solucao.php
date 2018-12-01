@@ -26,7 +26,7 @@
 	// if (the_content()) { $conteudo = get_content(); };
 ?>
 <section class="container">
-	<article class="row" id="topoPagina" style="background-color: <?php esc_attr_e(the_field('cor_fundo')); ?>!important">
+	<article class="row" id="topoPagina">
 		<div class="col-12 col-md-2">
 		<?php
 			if ( has_post_thumbnail() ) { 

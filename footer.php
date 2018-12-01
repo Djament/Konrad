@@ -17,7 +17,7 @@
 			</div><!-- #content -->
 		</main>
 
-		<footer id="colophon" class="site-footer" role="contentinfo">
+		<footer id="colophon" class="site-footer container-fluid" role="contentinfo" >
 			<div class="wrap">
 				<?php
 				get_template_part( 'template-parts/footer/footer', 'widgets' );
@@ -54,16 +54,16 @@
 <?php wp_footer(); ?>
 <script>
 	
-			const menu = document.querySelector('.navigation-top');
-			window.onscroll = function() {menuRolagem()};
+			// const menu = document.querySelector('.navigation-top');
+			// window.onscroll = function() {menuRolagem()};
 
-			function menuRolagem() {
-			    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-			        menu.style = 'background-color: rgba(255,255,255,0.95) !important; height: 60px;';
-			    } else {
-			        menu.style = 'background-color: rgba(255,255,255,1) !important; height: 80px;';
-			    }
-			}
+			// function menuRolagem() {
+			//     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+			//         menu.style = 'background-color: rgba(255,255,255,0.95) !important; height: 60px;';
+			//     } else {
+			//         menu.style = 'background-color: rgba(255,255,255,1) !important; height: 80px;';
+			//     }
+			// }
 
 		
 </script>

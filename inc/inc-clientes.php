@@ -39,14 +39,14 @@
 								<!-- Se houver logo cadastrado -->
 								<?php if ( get_sub_field('cliente_logo') ):
 									$clienteLogo = get_sub_field('cliente_logo'); ?>
-									<img class="col-6 cliente-logo" src="<?php echo $clienteLogo['url'] ?>" alt="<?php the_sub_field('cliente'); ?>" title="<?php the_sub_field('cliente'); ?>" width="250" heigh="165">
+									<img class="col-6 cliente-logo" src="<?php echo $clienteLogo['url'] ?>" alt="<?php the_sub_field('cliente'); ?>" title="<?php the_sub_field('cliente'); ?>" width="225" height="165">
 									<div class="col-6">
 										<!-- Nome do cliente -->
 										<h6 class="cliente"><?php the_sub_field('cliente'); ?></h6>
 										<!-- Serviços prestados (links de páginas) -->
 										<?php if ($servicos): ?>
 											<?php foreach ($servicos as $servico): ?>
-												<a href="<?php echo esc_url(home_url()).'/'.$servico->post_name; ?>" title="<?php echo $servico->post_title; ?>" alt="<?php echo $servico->post_title; ?>" class="cliente-servicos" style="font-weight:bold; color: <?php esc_attr_e(the_field('cor_destaque_secundario')); ?> ">
+												<a href="<?php echo esc_url(home_url()).'/'.$servico->post_name; ?>" title="<?php echo $servico->post_title; ?>" alt="<?php echo $servico->post_title; ?>" class="cliente-servicos" style="font-weight:bold; color: <?php esc_attr_e(the_field('cor_destaque_secundario')); ?> !important">
 													<?php echo $servico->post_title .' '; ?>
 												</a>
 											<?php endforeach ?>
@@ -105,7 +105,7 @@
 										<!-- Serviços prestados (links de páginas) -->
 										<?php if ($servicos): ?>
 											<?php foreach ($servicos as $servico): ?>
-												<a href="<?php echo esc_url(home_url()).'/'.$servico->post_name; ?>" title="<?php echo $servico->post_title; ?>" alt="<?php echo $servico->post_title; ?>" class="cliente-servicos" style="font-weight:bold; color: <?php esc_attr_e(the_field('cor_destaque_secundario')); ?> ">
+												<a href="<?php echo esc_url(home_url()).'/'.$servico->post_name; ?>" title="<?php echo $servico->post_title; ?>" alt="<?php echo $servico->post_title; ?>" class="cliente-servicos" style="font-weight:bold; color: <?php esc_attr_e(the_field('cor_destaque_secundario')); ?>!important">
 													<?php echo $servico->post_title .' '; ?>
 												</a>
 											<?php endforeach ?>

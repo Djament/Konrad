@@ -13,9 +13,31 @@
 */
 html, body, a{
 	scroll-behavior: smooth;
+	-webkit-transition: all 0.6s ease-in-out;
+	-o-transition: all 0.6s ease-in-out;
+	transition: all 0.6s ease-in-out;
 }
 a:hover{
+	/*color: inherit !important;*/
 	text-decoration: none !important;
+}
+a.recent button{
+	padding: 10px 20px;
+    background-color: #4383bf;
+    border-radius: 50px !important;
+    display: block !important;
+    margin: 10px auto !important;
+    float: right;
+	border: 2px solid #4383bf;
+}
+button a{
+	color: inherit;
+	text-transform: none;
+}
+button:hover{
+	text-transform: none;
+	background-color: #fff !important;
+	color: #4383bf !important;
 }
 .clearfix{
 	display: table;
@@ -87,7 +109,7 @@ h6{
 	margin-bottom: 0 !important;
 }
 #breadcrumbs{
-	margin: 24px auto 24px 36px;
+	margin: 24px auto;
 	font-size: 16px;
 	color: #4383bf;
 }
@@ -117,6 +139,7 @@ section.container{
 }
 div#primary.site-content{
 	width: 71% !important;
+	padding-top: 0 !important;
 }
 article#conteudoPrincipal.row{
 	text-align: justify;
@@ -150,12 +173,15 @@ p.post-resumo{
 	margin-top: -20px !important;
 	padding: 0 0 0 42px !important;
 }
+img.attachment-img-destaque.size-img-destaque.wp-post-image{
+	min-width: 100% !important;
+}
 /* VITRINE DE POSTS RELACIONADOS */
 img.attachment-capa-card.size-capa-card.wp-post-image{
 	/*margin: 0 !important;
 	padding: 0 !important;
 	display: flex;*/
-	width: -webkit-fill-available !important;
+	min-width: 100% !important;
 }
 /* ASIDE */
 .has-sidebar #secondary{
@@ -170,7 +196,7 @@ h2.widget-title{
 }
 /*SOLUÇÃO*/
 .cliente-logo{
-	width: 250px !important;
+	width: 225px !important;
 	height: 165px !important;
 	margin: auto;
 }
@@ -226,7 +252,7 @@ i.cliente-depoimento p{
 		margin-top: 90px;
 		/*padding-top: 110px;*/
 		position: sticky;
-			top: 66px;
+			top: 80px;
 	}
 	main{
 		/*margin-top: 60px;*/

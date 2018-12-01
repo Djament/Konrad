@@ -47,7 +47,7 @@ if( function_exists('acf_add_options_page') ) {
 function konrad_setup() {
 	remove_image_size('twentyseventeen-featured-image');
 	add_image_size('konrad-featured-image', 1200, 900, true);
-	add_image_size('capa-card', 250, 165, true);
+	add_image_size('capa-card', 225, 165, true);
 	add_image_size('img-destaque', 1200, 450, true);
 }
 add_action( 'after_setup_theme', 'konrad_setup', 11 );

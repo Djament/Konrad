@@ -41,7 +41,7 @@
 		<div class="col-12">
 			<?php
 				if ( function_exists('yoast_breadcrumb') ) {
-				  yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+				  yoast_breadcrumb( '<p id="breadcrumbs" style="color:'.the_sub_field('cor_fundo').' !important;">','</p>' );
 				}
 			?>
 			<?php

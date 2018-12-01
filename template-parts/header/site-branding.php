@@ -11,8 +11,9 @@
 ?>
 <div class="site-branding" style="color:<?php echo esc_attr_e(the_field('cor_fundo')); ?> !important">
 	<div class="wrap">
-
-		<a href="<?php  esc_url(home_url());?>"><img src="<?php echo esc_url(home_url()).'/wp-content/themes/konrad/images/logo.png'; ?>" alt="Konrad" title="Konrad" height="70" width="243" style="width:243px;height:70px"></a>
+		<a href="<?php  echo esc_url(home_url());?>" title="Acessar Homepage" alt=="Acessar Homepage" target="_self" rel="next">
+			<img src="<?php echo esc_url(home_url()).'/wp-content/themes/konrad/images/logo.png'; ?>" alt="Konrad" title="Konrad" height="70" width="243" style="width:243px;height:70px">
+		</a>
 
 		<div class="site-branding-text">
 			<h1 class="post-titulo" style="color:<?php echo the_field('cor_destaque_primario'); ?>!important;"><?php esc_attr_e(the_title()); ?></h1>
