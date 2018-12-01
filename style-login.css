@@ -1,0 +1,29 @@
+/*
+ Theme Name: Konrad
+ Theme URI:	https://konrad.com.br
+ Description: Tema desenvolvido para a empresa de Consultoria, Treinamento e Auditoria em Sistemas de Gestão
+ Author:	 Marcelo Diament, Djament Comunicação
+ Author URI: https://djament.com.br/cv
+ Template:	twentyseventeen
+ Version:	1.0.0
+ License:	GNU General Public License v2 or later
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:	bootstrap, left-sidebar, responsive-layout, accessibility-ready
+ Text Domain: konrad
+*/
+/* Página Login WP */
+body.login div#login h1 {
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+}
+body.login div#login form#loginform p.submit input#wp-submit{
+	background-color: #4383bf !important;
+}
+
+a.button.button-primary.button-hero {
+	background-color: #4383bf !important;
+}
+
+#adminmenu div.wp-menu-name:active, .wp-has-current-submenu{
+	background-color: #4383bf !important;
+}
