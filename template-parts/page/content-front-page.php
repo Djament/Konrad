@@ -16,6 +16,8 @@
 	}
 </style>
 
+
+
 <section class="container-fluid banner-container">
 	<article class="row" id="bannerTopo">
 		<?php if ( has_post_thumbnail() ) :
@@ -62,6 +64,12 @@
 
 	</article>
 </section>
+
+<span class="clearfix"></span>
+
+<!-- ## SOLUÇÕES - INÍCIO -->
+<?php include_once(ABSPATH.'wp-content/themes/konrad/inc/inc-solucoes.php') ?>
+<!-- ## SOLUÇÕES - FIM -->
 
 <span class="clearfix"></span>
 

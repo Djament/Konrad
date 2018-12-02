@@ -17,7 +17,7 @@
 			</div><!-- #content -->
 		</main>
 
-		<footer id="colophon" class="site-footer container-fluid" role="contentinfo" >
+		<footer id="colophon" class="site-footer" role="contentinfo" >
 			<div class="wrap">
 				<?php
 				get_template_part( 'template-parts/footer/footer', 'widgets' );

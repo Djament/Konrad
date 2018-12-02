@@ -22,7 +22,7 @@
 							    	<caption>'.$recent['post_excerpt'].' </caption>
 								</a>
 								<a class="recent" href="'.get_permalink($recent['ID']).'">
-									<button>
+									<button class="cta-button">
 										saiba mais
 									</button>
 								</a>

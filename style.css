@@ -21,7 +21,7 @@ a:hover{
 	/*color: inherit !important;*/
 	text-decoration: none !important;
 }
-a.recent button{
+button.cta-button{
 	padding: 10px 20px;
     background-color: #4383bf;
     border-radius: 50px !important;
@@ -34,7 +34,7 @@ button a{
 	color: inherit;
 	text-transform: none;
 }
-button:hover{
+button.cta-button:hover{
 	text-transform: none;
 	background-color: #fff !important;
 	color: #4383bf !important;

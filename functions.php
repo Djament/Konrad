@@ -13,6 +13,8 @@ function konrad_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'konrad_enqueue_styles' );
 
+/* Permitindo definir o resumo (excerpt) para página - por padrão é só para posts */
+add_post_type_support( 'page', 'excerpt' );
 /* ACF Post Object */
 // function my_post_object_result( $title, $post, $field, $post_id ) {
 //	// add post type to each result
@@ -24,21 +26,30 @@ add_action( 'wp_enqueue_scripts', 'konrad_enqueue_styles' );
 /* Página de opções */
 if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page(array(
-		'page_title' 	=> 'Clientes',
-		'menu_title'	=> 'Clientes',
-		'menu_slug' 	=> 'clientes',
-		// 'capability'	=> 'edit_posts',
-		'redirect'		=> false,
-		'icon_url' => 'dashicons-groups',
-		'position' => 4
-	));
-	acf_add_options_page(array(
 		'page_title' 	=> 'Configurações Gerais',
 		'menu_title'	=> 'Configurações Gerais',
 		'menu_slug' 	=> 'configuracoes-gerais',
 		// 'capability'	=> 'edit_posts',
 		'redirect'		=> false,
 		'icon_url' => 'dashicons-admin-tools',
+		'position' => 3
+	));
+	acf_add_options_page(array(
+		'page_title' 	=> 'Soluções',
+		'menu_title'	=> 'Soluções',
+		'menu_slug' 	=> 'solucoes',
+		// 'capability'	=> 'edit_posts',
+		'redirect'		=> true,
+		'icon_url' => 'dashicons-chart-area',
+		'position' => 4
+	));
+	acf_add_options_page(array(
+		'page_title' 	=> 'Clientes',
+		'menu_title'	=> 'Clientes',
+		'menu_slug' 	=> 'clientes',
+		// 'capability'	=> 'edit_posts',
+		'redirect'		=> false,
+		'icon_url' => 'dashicons-groups',
 		'position' => 5
 	));
 }
